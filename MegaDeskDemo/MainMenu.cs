@@ -7,11 +7,6 @@ namespace MegaDeskDemo
             InitializeComponent();
         }
 
-        private void exitButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void ExitBtn_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -22,6 +17,22 @@ namespace MegaDeskDemo
             AddQuote addQuote = new AddQuote();
             addQuote.Tag = this;
             addQuote.Show(this);
+            Hide();
+        }
+
+        private void ViewQuotes_Btn(object sender, EventArgs e)
+        {
+            ViewQuotes viewQuotes = new ViewQuotes();
+            viewQuotes.Tag = this;
+            viewQuotes.Show(this);
+            Hide();
+        }
+
+        private void SearchQuotes_Btn(object sender, EventArgs e)
+        {
+            SearchQuote searchQuote = new SearchQuote();
+            searchQuote.Tag = this;
+            searchQuote.Show(this);
             Hide();
         }
     }

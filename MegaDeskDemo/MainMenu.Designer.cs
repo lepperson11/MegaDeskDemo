@@ -54,6 +54,7 @@
             viewQuotes.TabIndex = 1;
             viewQuotes.Text = "View Quotes";
             viewQuotes.UseVisualStyleBackColor = true;
+            viewQuotes.Click += ViewQuotes_Btn;
             // 
             // searchQuotes
             // 
@@ -63,6 +64,7 @@
             searchQuotes.TabIndex = 2;
             searchQuotes.Text = "Search Qoutes";
             searchQuotes.UseVisualStyleBackColor = true;
+            searchQuotes.Click += SearchQuotes_Btn;
             // 
             // exitButton
             // 
@@ -84,7 +86,7 @@
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
             // 
-            // Form1
+            // MainMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -94,7 +96,7 @@
             Controls.Add(searchQuotes);
             Controls.Add(viewQuotes);
             Controls.Add(newQoute);
-            Name = "Form1";
+            Name = "MainMenu";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
